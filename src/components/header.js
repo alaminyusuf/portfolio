@@ -2,13 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 
 // components
-import Navbar from "./Navbar"
+// import Navbar from "./Nav"
 
-const Header = () => (
-  <header>
-    <Navbar />
-  </header>
-)
+const Header = () => <header>{/* <Navbar /> */}</header>
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -1,0 +1,50 @@
+.hero-bg {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* @media() {
+  .hero-bg {
+    height: 70vh;
+  }
+} */
+
+.hero-bg::after {
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.hero-bg li {
+  z-index: 5;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 500px) {
+  .hero-bg {
+    height: 75vh;
+  }
+
+  .hero-bg::after {
+    height: 75%;
+  }
+
+  .hero h1 {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
