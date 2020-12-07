@@ -17,8 +17,10 @@ const IndexPage = () => (
         backgroundImage: `url(${Image})`,
       }}
     >
-      <Navigation />
-      <Hero />
+      <div className="wrapper">
+        <Navigation />
+        <Hero />
+      </div>
     </div>
   </Layout>
 )
