@@ -7,6 +7,7 @@ import "../components/style.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
+import Cards from "../components/Cards"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,8 @@ const IndexPage = () => (
         <Hero />
       </div>
     </div>
+    <h1 className="text-2xl md:text-3xl py-5 text-center">My Expertise</h1>
+    <Cards />
   </Layout>
 )
 
