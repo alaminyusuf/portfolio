@@ -7,7 +7,7 @@ const Hero = () => {
       <h1 className="text-3xl text-green-400 md:text-9xl text-center">
         Ala-Amin Yusuf{" "}
         <small className="block text-2xl md:text-4xl">
-          JavaScript developer
+          Fullstack JavaScript developer
         </small>
       </h1>
     </div>
