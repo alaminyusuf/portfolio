@@ -29,14 +29,6 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        © {new Date().getFullYear()},{` `}
-        <a href="https://www.github.com/dev-empire.com">Al-amin Yusuf</a>
-      </footer>
     </ThemeProvider>
   )
 }
