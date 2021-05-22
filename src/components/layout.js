@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import { ThemeProvider } from "@material-ui/core"
-import { theme } from "../theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,10 +24,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ThemeProvider theme={theme}>
+    <React.Fragment>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
-    </ThemeProvider>
+    </React.Fragment>
   )
 }
 
