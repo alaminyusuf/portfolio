@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
+import { GlobalStyle } from "../utils/createGlobalStyle"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
@@ -14,6 +15,7 @@ const Container = styled.div`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <GlobalStyle />
     <Container>
       <Nav />
       <Hero />
