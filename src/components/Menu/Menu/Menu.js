@@ -1,11 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Pdf from "../../../assets/Al-amin_Yusuf.pdf"
 
 const Menu = ({ open }) => (
   <StyledMenu open={open}>
     <a href="/">Home</a>
-    <a href="/order">Resume</a>
+    <a href={Pdf} download>
+      Resume
+    </a>
     <a href="/contact">Contact</a>
     <a href="/my-work">My Work</a>
   </StyledMenu>
