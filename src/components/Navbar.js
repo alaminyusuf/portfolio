@@ -1,23 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 
+import { useClickOutside } from "../utils/useClickOutside"
 import Burger from "./Menu/Burger"
 import Menu from "./Menu/Menu"
 
 const Nav = () => {
-  const useClickOutside = (ref, handler) => {
-    useEffect(() => {
-      const listner = event => {
-        if (!ref.current || ref.current.contains(event.target)) {
-          return
-        }
-        handler(event)
-      }
-      document.addEventListener("mousedown", listner)
-      return () => {
-        document.removeEventListener("mousedown", listner)
-      }
-    }, [ref, handler])
-  }
   const [open, setOpen] = React.useState(false)
   const node = React.useRef()
 
