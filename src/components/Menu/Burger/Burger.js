@@ -41,7 +41,6 @@ const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
     :first-child {
-      background: ${({ open }) => (open ? "#fafafa" : "#414141")};
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
     }
     :nth-child(2) {
@@ -49,7 +48,6 @@ const StyledBurger = styled.button`
       transform: ${({ open }) => (open ? "translateX(20px)" : "translate(0)")};
     }
     :nth-child(3) {
-      background: ${({ open }) => (open ? "#fafafa" : "#414141")};
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }

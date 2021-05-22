@@ -5,9 +5,9 @@ import styled from "styled-components"
 const Menu = ({ open }) => (
   <StyledMenu open={open}>
     <a href="/">Home</a>
+    <a href="/order">Resume</a>
     <a href="/contact">Contact</a>
     <a href="/my-work">My Work</a>
-    <a href="/order">Resume</a>
   </StyledMenu>
 )
 
@@ -19,7 +19,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #414141;
+  background: #f4f4f4;
   height: 100%;
   text-align: left;
   position: absolute;
@@ -37,17 +37,19 @@ const StyledMenu = styled.nav`
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: #fafafa;
+    color: #414141;
     text-align: center;
     text-decoration: none;
     display: ${({ open }) => (open ? "block" : "none")};
     transition: color 0.3s linear;
-    @media (max-width: 563px) {
+    width: ;
+    margin: 0 auto;
+    &:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
       font-size: 1.2rem;
       text-align: center;
-    }
-    &:hover {
-      color: #515151;
     }
   }
 `

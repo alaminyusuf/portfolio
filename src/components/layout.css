@@ -3,25 +3,44 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
-  background-color: #414141;
-  color: #fafafa;
+  color: #414141;
+  background-color: #fafafa;
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 section {
-  margin: 2.5em 0;
+  margin-top: 2em;
 }
 
 .intro_header {
   font-family: "Reggae One", cursive;
+  font-weight: 400;
   font-size: 3rem;
 }
 
 .salutation {
   font-size: 16px;
   padding: 1em 0;
+}
+
+.summary {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+  .summary {
+    letter-spacing: 1.5px;
+  }
+  section {
+    width: 80%;
+  }
 }
