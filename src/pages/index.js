@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-import Nav from "../components/Navv"
+import Nav from "../components/Navbar"
 
 const IndexPage = () => (
   <Layout>
