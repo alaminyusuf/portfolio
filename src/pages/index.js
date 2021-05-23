@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import Nav from "../components/Navbar"
+import Cta from "../components/Cta"
 
 const Container = styled.div`
   width: 85%;
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Container>
       <Nav />
       <Hero />
+      <Cta />
     </Container>
   </Layout>
 )
