@@ -1,10 +1,10 @@
 import React from "react"
 
 import { useClickOutside } from "../../utils/useClickOutside"
-import Burger from "../Menu/Burger"
-import Menu from "../Menu/Menu"
+import Burger from "./Menu/Burger"
+import Menu from "./Menu/Menu"
 
-const Nav = () => {
+const Navbar = () => {
   const [open, setOpen] = React.useState(false)
   const node = React.useRef()
 
@@ -18,4 +18,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Navbar
