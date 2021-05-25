@@ -6,12 +6,15 @@ import SEO from "../components/seo"
 
 const Wrapper = styled.div`
   width: 70%;
-  margin: auto auto;
+  margin: 0 auto;
 `
 const Header = styled.h2`
   font-family: "Reggae One", cursive;
   font-size: 3rem;
   font-weight: 400;
+  @media (max-width: 563px) {
+    font-size: 2.5rem;
+  }
 `
 
 const Content = styled.div`
@@ -35,7 +38,7 @@ const Email = styled(Link)`
 
   @media (max-width: 340px) {
     padding: 0.5em;
-    font-size: 14px;
+    font-size: 11px;
   }
 `
 

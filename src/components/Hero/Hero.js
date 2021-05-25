@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Wrapper = styled.section`
-  margin-top: 2em;
+  margin: 2em 0;
   margin-bottom: 1em;
   @media (min-width: 768px) {
     width: 80%;

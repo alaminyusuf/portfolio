@@ -20,13 +20,6 @@ const Button = styled(Link)`
   }
 `
 
-const Cta = () => {
-  return (
-    <React.Fragment>
-      <Button to="/my-projects">my projects</Button>
-      <Button to="contact">contact me</Button>
-    </React.Fragment>
-  )
-}
+const Cta = ({ link, text }) => <Button to={link}>{text}</Button>
 
 export default Cta

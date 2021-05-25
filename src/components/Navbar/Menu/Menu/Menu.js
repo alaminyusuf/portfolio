@@ -10,7 +10,7 @@ const Menu = ({ open }) => (
       Resume
     </a>
     <a href="/contact">Contact</a>
-    <a href="/my-work">My Work</a>
+    <a href="/my-projects">My Work</a>
   </StyledMenu>
 )
 
